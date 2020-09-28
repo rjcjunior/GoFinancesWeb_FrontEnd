@@ -21,6 +21,11 @@ export const ImportFileContainer = styled.section`
   margin-top: 40px;
   border-radius: 5px;
   padding: 64px;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 16px;
+  }
 `;
 
 export const Footer = styled.section`
@@ -28,6 +33,11 @@ export const Footer = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-flow: column;
+    text-align: center;
+  }
 
   p {
     display: flex;
@@ -51,6 +61,11 @@ export const Footer = styled.section`
 
     &:hover {
       background: ${shade(0.2, '#ff872c')};
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 16px;
     }
   }
 `;

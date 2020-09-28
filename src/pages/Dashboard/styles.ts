@@ -21,6 +21,10 @@ export const CardContainer = styled.section`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 32px;
   margin-top: -150px;
+
+  @media screen and (max-width: 768px){
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Card = styled.div`
@@ -49,11 +53,12 @@ export const Card = styled.div`
 
 export const TableContainer = styled.section`
   margin-top: 64px;
+  max-width: 100%;
+  overflow: auto;
 
   table {
     width: 100%;
     border-spacing: 0 8px;
-
     th {
       color: #969cb3;
       font-weight: normal;
